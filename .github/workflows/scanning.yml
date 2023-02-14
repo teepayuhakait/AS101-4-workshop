@@ -20,8 +20,5 @@ jobs:
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
-    - name: build docker containers
-      run: |
-        docker-compose build
     - name: hawkeyescan
       run: hawkeye scan --target web/
